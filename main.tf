@@ -32,4 +32,7 @@ resource "aws_instance" "instance-1" {
 }
 output "mypublicIP" {
   value = aws_instance.instance-1.public_ip
+
 }
+
+resource "myeip" {
